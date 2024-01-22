@@ -1,7 +1,11 @@
-const CreateTodoButton = () => {
+import './CreateTodoButton.css'
+
+export const CreateTodoButton = () => {
   return (
-    <button>+</button>
+    <button className='CreateTodoButton'>+</button>
   );
 }
 
-export { CreateTodoButton };
+
+
+
