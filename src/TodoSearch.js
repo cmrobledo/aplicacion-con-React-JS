@@ -1,9 +1,16 @@
-import './TodoSearch.css'
+import "./TodoSearch.css";
 
-const TodoSearch = () => {
+const TodoSearch = ({ searchValue, setSearchValue }) => {
   return (
-    <input placeholder="Cortar cebolla" className='TodoSearch'/>
+    <input
+      placeholder="Cortar cebolla"
+      className="TodoSearch"
+      value={searchValue}
+      onChange={(event) => {
+        setSearchValue(event.target.value);
+      }}
+    />
   );
-}
+};
 
 export { TodoSearch };
